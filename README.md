@@ -56,6 +56,8 @@ Made with golang
 3. **Generate the html doc file**
 
 * use the command : 
->$ lazy_doc -generate
+```console 
+myos@teste:~$ lazy_doc -generate
+```
 
 This command will generate a api_doc.html and a style.css for you 😎
