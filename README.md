@@ -8,6 +8,8 @@ Made with golang
 
 ### Usage :
 
+#### Method 1 : 
+
 1. **Create a json file named api.json in your project directory**
 
 2. **Add some data like this example**
@@ -57,7 +59,22 @@ Made with golang
 
 * use the command : 
 ```console 
-myos@teste:~$ lazy_doc -generate
+lazy_doc -generate -html -md #or 
+lazy_doc -generate -html #or
+lazy_doc -generate -md
 ```
 
 This command will generate a api_doc.html and a style.css for you 😎
+
+#### Method 2 : 
+1. use the command below to generate an api.json file :
+```console
+lazy doc -create_doc
+```
+2. complete all thing you want
+3. use command below to generate the doc : 
+```console
+lazy_doc -generate -md -html #or
+lazy_doc -generate -html #or
+lazy_doc -generate -md
+```

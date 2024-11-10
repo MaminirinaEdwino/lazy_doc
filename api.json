@@ -1,37 +1,17 @@
 {
-    "Name": "Mon premier documentation d'api\n",
-    "Version": "1.0.0",
-    "Description": "Ceci est un CLI qui permet de generer rapidement une documentation d'API\n",
+    "Name": "myapi\n",
+    "Version": "10",
+    "Description": "Description\n",
     "Endpoints": [
         {
-            "Tag": "Doc",
-            "Root": "/GET",
+            "Tag": "POST",
+            "Root": "/post",
             "Method": "GET",
             "Body": "",
-            "Response": "{\n\t\"endpoint\":\"teste\"\n}\n",
+            "Response": "{\n\t\"name\":\"post\",\n\t\"content\":\"my post\",\n}\n",
             "Status_code": "200",
-            "Description": "Get all the doc\n",
-            "Summary": "Get doc\n"
-        },
-        {
-            "Tag": "Doc",
-            "Root": "/POST",
-            "Method": "POST",
-            "Body": "{\n\t\"doc\":\"teste\"\n}\n",
-            "Response": "{\n\t\"message\":\"posted\"\n}\n",
-            "Status_code": "200",
-            "Description": "post a doc\n",
-            "Summary": "post doc\n"
-        },
-        {
-            "Tag": "Doc",
-            "Root": "/PATCH",
-            "Method": "PATCH",
-            "Body": "{\n\t\"doc\":\"teste\"\n}\n",
-            "Response": "{\n\t\"message\":\"posted\"\n}\n",
-            "Status_code": "200",
-            "Description": "post a doc\n",
-            "Summary": "patch doc\n"
+            "Description": "description\n",
+            "Summary": "post\n"
         }
     ]
 }

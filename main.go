@@ -15,7 +15,8 @@ func main() {
 	create := flag.Bool("create_doc", false, "create the api.json file")
 	generate := flag.Bool("generate", false, "generate the web documentation")
 	help := flag.Bool("help", false, "help")
-
+	html := flag.Bool("html", false, "generate html documentation")
+	md := flag.Bool("md", false, "generate markdown documentation")
 	flag.Parse()
 	
 	switch {
@@ -23,7 +24,7 @@ func main() {
 		jsongenerator.Jsongenerator("api.json")
 	case *generate:
 		docbuilder.Html_template()
-		docbuilder.Doc_builder(filereader.Read_api_file())
+		docbuilder.Doc_builder(filereader.Read_api_file(), *html, *md)
 	
 	case *help:
 		fmt.Println("help")
